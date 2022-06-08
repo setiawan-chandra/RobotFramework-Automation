@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220608 10:53:32.119" rpa="false" schemaversion="3">
+<suite id="s1" name="Signin" source="d:\tes\signin\signin.robot">
+<test id="s1-t1" name="Test Case Sign In" line="5">
+<kw name="Get Selenium Speed" library="SeleniumLibrary">
+<var>${default_implicit_wait}</var>
+<doc>Gets the delay that is waited after each Selenium command.</doc>
+<msg timestamp="20220608 10:53:32.613" level="INFO">${default_implicit_wait} = 0 seconds</msg>
+<status status="PASS" starttime="20220608 10:53:32.612" endtime="20220608 10:53:32.613"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.25s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220608 10:53:32.614" endtime="20220608 10:53:32.614"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://trello.com/home</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220608 10:53:32.615" level="INFO">Opening browser 'Chrome' to base url 'https://trello.com/home'.</msg>
+<status status="PASS" starttime="20220608 10:53:32.615" endtime="20220608 10:53:37.113"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220608 10:53:37.141" endtime="20220608 10:53:37.961"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:div#BXP-APP &gt; header.BigNavstyles__Header-sc-1mttgq7-1.dnqBGB &gt; div &gt; div.BigNavstyles__NavBar-sc-1mttgq7-3.dgpKao &gt; div.Buttonsstyles__ButtonGroup-sc-1jwidxo-3.jnMZCI &gt; a:nth-child(1)</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:53:37.962" endtime="20220608 10:53:39.184"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:div#BXP-APP &gt; header.BigNavstyles__Header-sc-1mttgq7-1.dnqBGB &gt; div &gt; div.BigNavstyles__NavBar-sc-1mttgq7-3.dgpKao &gt; div.Buttonsstyles__ButtonGroup-sc-1jwidxo-3.jnMZCI &gt; a:nth-child(1)</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:53:39.184" level="INFO">Clicking element 'css:div#BXP-APP &gt; header.BigNavstyles__Header-sc-1mttgq7-1.dnqBGB &gt; div &gt; div.BigNavstyles__NavBar-sc-1mttgq7-3.dgpKao &gt; div.Buttonsstyles__ButtonGroup-sc-1jwidxo-3.jnMZCI &gt; a:nth-child(1)'.</msg>
+<status status="PASS" starttime="20220608 10:53:39.184" endtime="20220608 10:53:42.879"/>
+</kw>
+<kw name="Wait Until Location Is" library="SeleniumLibrary">
+<arg>https://trello.com/login</arg>
+<doc>Waits until the current URL is ``expected``.</doc>
+<status status="PASS" starttime="20220608 10:53:42.889" endtime="20220608 10:53:43.199"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>id:user</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:53:43.199" endtime="20220608 10:53:44.048"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:user</arg>
+<arg>wawantan17@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220608 10:53:44.051" level="INFO">Typing text 'wawantan17@gmail.com' into text field 'id:user'.</msg>
+<status status="PASS" starttime="20220608 10:53:44.049" endtime="20220608 10:53:44.987"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:53:44.989" level="INFO">Clicking element 'id:login'.</msg>
+<status status="PASS" starttime="20220608 10:53:44.989" endtime="20220608 10:53:45.633"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Log in to continue to:</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220608 10:53:45.633" endtime="20220608 10:53:49.052"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>name:password</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:53:49.053" endtime="20220608 10:53:49.881"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>@FlashCoffeeTesQA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220608 10:53:49.883" level="INFO">Typing text '@FlashCoffeeTesQA' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20220608 10:53:49.881" endtime="20220608 10:53:50.875"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:login-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:53:50.875" level="INFO">Clicking element 'id:login-submit'.</msg>
+<status status="PASS" starttime="20220608 10:53:50.875" endtime="20220608 10:53:51.529"/>
+</kw>
+<status status="PASS" starttime="20220608 10:53:32.609" endtime="20220608 10:53:51.530"/>
+</test>
+<test id="s1-t2" name="Test Case Create Board" line="28">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>class:_1N9LJYg3C9x47Y</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:53:51.537" endtime="20220608 10:54:01.843"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:_1N9LJYg3C9x47Y</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:01.843" level="INFO">Clicking element 'class:_1N9LJYg3C9x47Y'.</msg>
+<status status="PASS" starttime="20220608 10:54:01.843" endtime="20220608 10:54:02.593"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>class:_3Qtx4lodxp9J0E</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:54:02.593" endtime="20220608 10:54:03.404"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:_3Qtx4lodxp9J0E</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:03.404" level="INFO">Clicking element 'class:_3Qtx4lodxp9J0E'.</msg>
+<status status="PASS" starttime="20220608 10:54:03.404" endtime="20220608 10:54:04.093"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:body &gt; div.atlaskit-portal-container &gt; div &gt; section &gt; div &gt; form &gt; div:nth-child(1) &gt; label &gt; input</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:54:04.093" endtime="20220608 10:54:04.863"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:body &gt; div.atlaskit-portal-container &gt; div &gt; section &gt; div &gt; form &gt; div:nth-child(1) &gt; label &gt; input</arg>
+<arg>Testing AUTOMATION</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:04.864" level="INFO">Typing text 'Testing AUTOMATION' into text field 'css:body &gt; div.atlaskit-portal-container &gt; div &gt; section &gt; div &gt; form &gt; div:nth-child(1) &gt; label &gt; input'.</msg>
+<status status="PASS" starttime="20220608 10:54:04.863" endtime="20220608 10:54:06.148"/>
+</kw>
+<kw name="Mouse Down" library="SeleniumLibrary">
+<arg>css:body &gt; div.atlaskit-portal-container &gt; div &gt; section &gt; div &gt; form &gt; button</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20220608 10:54:06.148" level="INFO">Simulating Mouse Down on element 'css:body &gt; div.atlaskit-portal-container &gt; div &gt; section &gt; div &gt; form &gt; button'.</msg>
+<status status="PASS" starttime="20220608 10:54:06.148" endtime="20220608 10:54:06.953"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:body &gt; div.atlaskit-portal-container &gt; div &gt; section &gt; div &gt; form &gt; button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:06.953" level="INFO">Clicking element 'css:body &gt; div.atlaskit-portal-container &gt; div &gt; section &gt; div &gt; form &gt; button'.</msg>
+<status status="PASS" starttime="20220608 10:54:06.953" endtime="20220608 10:54:07.554"/>
+</kw>
+<status status="PASS" starttime="20220608 10:53:51.535" endtime="20220608 10:54:07.555"/>
+</test>
+<test id="s1-t3" name="Test Case Create List" line="40">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>class:list-name-input</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:54:07.559" endtime="20220608 10:54:10.829"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class:list-name-input</arg>
+<arg>To Do</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:10.831" level="INFO">Typing text 'To Do' into text field 'class:list-name-input'.</msg>
+<status status="PASS" starttime="20220608 10:54:10.830" endtime="20220608 10:54:11.738"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#board &gt; div &gt; form &gt; div &gt; input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:11.740" level="INFO">Clicking element 'css:#board &gt; div &gt; form &gt; div &gt; input'.</msg>
+<status status="PASS" starttime="20220608 10:54:11.739" endtime="20220608 10:54:12.410"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>class:list-name-input</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:54:12.410" endtime="20220608 10:54:13.205"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>class:list-name-input</arg>
+<arg>Done</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:13.206" level="INFO">Typing text 'Done' into text field 'class:list-name-input'.</msg>
+<status status="PASS" starttime="20220608 10:54:13.205" endtime="20220608 10:54:14.082"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#board &gt; div &gt; form &gt; div &gt; input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:14.082" level="INFO">Clicking element 'css:#board &gt; div &gt; form &gt; div &gt; input'.</msg>
+<status status="PASS" starttime="20220608 10:54:14.082" endtime="20220608 10:54:14.713"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#board &gt; div.js-add-list.list-wrapper.mod-add &gt; form &gt; div &gt; a</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:54:14.713" endtime="20220608 10:54:15.514"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#board &gt; div.js-add-list.list-wrapper.mod-add &gt; form &gt; div &gt; a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:15.518" level="INFO">Clicking element 'css:#board &gt; div.js-add-list.list-wrapper.mod-add &gt; form &gt; div &gt; a'.</msg>
+<status status="PASS" starttime="20220608 10:54:15.516" endtime="20220608 10:54:16.105"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>class:js-add-a-card</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:54:16.105" endtime="20220608 10:54:16.893"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:js-add-a-card</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:16.895" level="INFO">Clicking element 'class:js-add-a-card'.</msg>
+<status status="PASS" starttime="20220608 10:54:16.893" endtime="20220608 10:54:17.499"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>css:#board &gt; div:nth-child(1) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; div &gt; div.list-card.js-composer &gt; div &gt; textarea</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20220608 10:54:17.500" endtime="20220608 10:54:18.317"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#board &gt; div:nth-child(1) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; div &gt; div.list-card.js-composer &gt; div &gt; textarea</arg>
+<arg>NEW Test 1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:18.319" level="INFO">Typing text 'NEW Test 1' into text field 'css:#board &gt; div:nth-child(1) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; div &gt; div.list-card.js-composer &gt; div &gt; textarea'.</msg>
+<status status="PASS" starttime="20220608 10:54:18.318" endtime="20220608 10:54:19.243"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#board &gt; div:nth-child(1) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; div &gt; div.cc-controls.u-clearfix &gt; div:nth-child(1) &gt; input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:19.245" level="INFO">Clicking element 'css:#board &gt; div:nth-child(1) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; div &gt; div.cc-controls.u-clearfix &gt; div:nth-child(1) &gt; input'.</msg>
+<status status="PASS" starttime="20220608 10:54:19.244" endtime="20220608 10:54:19.930"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:#board &gt; div:nth-child(1) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; div &gt; div.cc-controls.u-clearfix &gt; div:nth-child(1) &gt; a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220608 10:54:19.932" level="INFO">Clicking element 'css:#board &gt; div:nth-child(1) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; div &gt; div.cc-controls.u-clearfix &gt; div:nth-child(1) &gt; a'.</msg>
+<status status="PASS" starttime="20220608 10:54:19.931" endtime="20220608 10:54:20.576"/>
+</kw>
+<status status="PASS" starttime="20220608 10:54:07.558" endtime="20220608 10:54:20.576"/>
+</test>
+<test id="s1-t4" name="Test Case Move Card" line="60">
+<kw name="Drag And Drop" library="SeleniumLibrary">
+<arg>css:#board &gt; div:nth-child(1) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; a &gt; div.list-card-details.js-card-details &gt; span</arg>
+<arg>css:#board &gt; div:nth-child(2) &gt; div &gt; div.card-composer-container.js-card-composer-container</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" starttime="20220608 10:54:20.580" endtime="20220608 10:54:21.945"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css:#board &gt; div:nth-child(2) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; a &gt; div.list-card-details.js-card-details &gt; span</arg>
+<arg>NEW Test 1</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20220608 10:54:21.947" level="INFO">Verifying element 'css:#board &gt; div:nth-child(2) &gt; div &gt; div.list-cards.u-fancy-scrollbar.u-clearfix.js-list-cards.js-sortable.ui-sortable &gt; a &gt; div.list-card-details.js-card-details &gt; span' contains exact text 'NEW Test 1'.</msg>
+<status status="PASS" starttime="20220608 10:54:21.945" endtime="20220608 10:54:22.482"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220608 10:54:27.492" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220608 10:54:22.482" endtime="20220608 10:54:27.492"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220608 10:54:27.492" endtime="20220608 10:54:30.399"/>
+</kw>
+<status status="PASS" starttime="20220608 10:54:20.579" endtime="20220608 10:54:30.400"/>
+</test>
+<status status="PASS" starttime="20220608 10:53:32.119" endtime="20220608 10:54:30.403"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Signin">Signin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
