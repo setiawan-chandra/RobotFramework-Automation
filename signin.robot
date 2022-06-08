@@ -38,7 +38,7 @@ Test Case Create Board
         Click Element                                   css:body > div.atlaskit-portal-container > div > section > div > form > button
         
 Test Case Create List        
-        Wait Until Element is Enabled                   class:list-name-input
+        Wait Until Element is Enabled                   class:list-name-input                   10s
         Input Text                                      class:list-name-input                   To Do
         Click Element                                   css:#board > div > form > div > input
 
