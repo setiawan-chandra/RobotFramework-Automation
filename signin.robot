@@ -19,7 +19,7 @@ Test Case Sign In
      
         Click Element                                   id:login
         
-        Wait Until Page Contains                        Log in to continue to:
+        Wait Until Page Contains                        Log in to continue to:                          10s
         Wait Until Element is Enabled                   name:password
         Input Text                                      name:password                                   @FlashCoffeeTesQA
         
