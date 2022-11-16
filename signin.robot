@@ -15,13 +15,13 @@ Test Case Sign In
         Wait Until Location Is                           https://trello.com/login
 
         Wait Until Element is Enabled                   id:user
-        Input Text                                      id:user                                         wawantan17@gmail.com
+        Input Text                                      id:user                                         wawan@gmail.com
      
         Click Element                                   id:login
         
         Wait Until Page Contains                        Log in to continue to:                          10s
         Wait Until Element is Enabled                   name:password
-        Input Text                                      name:password                                   @FlashCoffeeTesQA
+        Input Text                                      name:password                                   @TesQA
         
         Click Element                                   id:login-submit
 
